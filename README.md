@@ -14,19 +14,19 @@ BridgeLabz-Training
 ├── core-java-practice
 │   │
 │   ├── gcr-codebase
-│   │   ├── programming-elements
+│   │   ├── methods
 │   │   ├── control-flow
 │   │   ├── arrays
-│   │   └── program-prerequisite
-│   │
+│   │   ├── strings
+|   |   ├── program-prerequisites
+│   │   ├── programming-elements
+|   |   ├── extras
 │   ├── scenario-based
 │   │
 │   └── leet-code-codebase
 │
 └── README.md
 ~~~
-
-
 
 
 - Learned basic Git commands (init, branch, checkout, add, commit, push).
