@@ -1,28 +1,32 @@
-Week 1: Git, GitHub & Java Programming Fundamentals
-----------------------------------------------------------------------------
+# Week 1: Git, GitHub & Java Programming Fundamentals
 
-Day 1 – Git & GitHub Setup
-(Date: 16-Dec-2025)
+## 📅 Day 1 – Git & GitHub Setup  
+*(Date: 15-Dec-2025)*
 
-1. Installed and configured Git
-2. Set up GitHub repository
+- Installed and configured Git.
+- Set up GitHub repository.
 
-BridgeLabz-Training/
+📁 *Project Folder Structure*
+
+
+BridgeLabz-Training
 │
-├── core-java-practice/
-│   ├── gcr-codebase/
-│   │   ├── arrays/
-│   │   ├── extras/
-│   │   ├── control-flow/
-│   │   ├── methods/
-│   │   ├── programming-elements/
-│   │   ├── programming-prerequisites/
-│   │   └── strings/
+├── core-java-practice
 │   │
-│   ├── leet-code-codebase/
-│   └── scenario-based/
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   ├── arrays
+│   │   └── program-prerequisite
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
 │
 └── README.md
 
-3. Learned basic Git commands (init, clone, add, commit, push)
-4. Successfully pushed files to the remote repository
+
+
+
+- Learned basic Git commands (init, branch, checkout, add, commit, push).
+- Successfully pushed files to the remote repository.
