@@ -18,7 +18,7 @@ public class SavingsAccount extends BankAccount{
     }
 
     // MAIN METHOD
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         SavingsAccount sa = new SavingsAccount(
                 1234567890L,
