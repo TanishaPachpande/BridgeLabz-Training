@@ -20,7 +20,7 @@ public class Circle {
         System.out.println("Radius of the circle: " + radius);
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args){
         // Using default constructor
         Circle c1 = new Circle();
         c1.displayRadius();
