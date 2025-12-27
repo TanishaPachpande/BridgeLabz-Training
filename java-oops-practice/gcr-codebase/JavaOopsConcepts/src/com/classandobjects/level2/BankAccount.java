@@ -7,13 +7,13 @@ public class BankAccount {
 	private double balance;
 	
 	//constructor
-	public BankAccount(String accountHolder,String accountNumber,double balance) {
+	public BankAccount(String accountHolder,String accountNumber,double balance) { 
 		this.accountHolder = accountHolder;
 		this.accountNumber = accountNumber;
 		this.balance = balance;
 	}
 	//creating method to display bank name
-	public static void displayBank() {
+	public static void displayBank(){
 		System.out.println("\t\t\t\tState of Chennai\t\t\t\t");
 		
 	}
