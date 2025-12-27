@@ -1,16 +1,23 @@
+🚀 Week 1: Git, GitHub & Core Java Fundamentals
+
+This week focused on building a strong foundation in Git & GitHub along with Core Java programming basics, emphasizing clean coding practices, logical thinking, and proper project organization.
+
 📆 Day 1 – Git & GitHub Environment Setup
 
 📅 Date: 15 December 2025
 
-Installed Git and completed initial configuration.
+🔹 Key Learnings
 
-Created and connected a GitHub repository.
+Installed Git and completed initial configuration
 
-Understood repository structure and branch usage.
+Created and connected a GitHub repository
 
-Successfully pushed the initial project files to GitHub.
+Understood repository structure and branch usage
+
+Successfully pushed initial project files to GitHub
 
 📂 Project Directory Layout
+~~~
 BridgeLabz-Training
 │
 ├── core-java-practice
@@ -24,7 +31,7 @@ BridgeLabz-Training
 │   └── leet-code-codebase
 │
 └── README.md
-
+~~~
 🔧 Git Commands Practiced
 
 git init
@@ -44,11 +51,13 @@ git push
 📅 Date: 16 December 2025
 🎯 Focus: Writing Readable & Professional Java Code
 
-Practiced Git workflows to understand version tracking.
+🔹 Activities
 
-Implemented basic Java programs to gain confidence with syntax.
+Practiced Git workflows to understand version tracking
 
-Regularly committed and pushed changes to GitHub.
+Implemented basic Java programs to strengthen syntax knowledge
+
+Regularly committed and pushed code changes to GitHub
 
 🧑‍💻 Coding Standards Followed
 
@@ -60,7 +69,7 @@ Clear comments for logic explanation
 
 Organized file structure for maintainability
 
-All programs were stored under the program-prerequisite module.
+📁 All programs were stored under the program-prerequisite module.
 
 🔗 Reference:
 👉 Day 2 – Basic Java Programs
@@ -69,7 +78,7 @@ All programs were stored under the program-prerequisite module.
 
 📅 Date: 17 December 2025
 
-Covered essential Java concepts:
+🔹 Concepts Covered
 
 Data types and variables
 
@@ -77,9 +86,11 @@ Operators
 
 Input/output handling using Scanner
 
-Solved multiple hands-on problems to reinforce understanding.
+🔹 Practice
 
-Code was committed and pushed after completion.
+Solved multiple hands-on problems
+
+Committed and pushed solutions after completion
 
 🔗 Reference:
 👉 Day 3 – Programming Elements
@@ -89,9 +100,11 @@ Code was committed and pushed after completion.
 📅 Date: 18 December 2025
 🧠 Focus: Logical Thinking & Flow Control
 
-Practiced conditional and looping constructs in Java.
+🔹 Topics Practiced
 
-Problems were grouped into three difficulty levels:
+Conditional and looping constructs in Java
+
+🔹 Problem Levels
 
 Level 1: if, if-else
 
@@ -99,9 +112,7 @@ Level 2: for, while, do-while
 
 Level 3: Logic-based and pattern problems
 
-Emphasis was placed on code clarity and structure.
-
-All programs were organized inside the control-flow directory.
+📁 All programs were organized inside the control-flow directory.
 
 🔗 Reference:
 👉 Day 4 – Control Flow Programs
@@ -111,17 +122,17 @@ All programs were organized inside the control-flow directory.
 📅 Date: 19 December 2025
 📊 Focus: Data Handling Using Arrays
 
-Learned array creation, traversal, and manipulation.
+🔹 Learnings
 
-Practiced problems across two levels:
+Array creation, traversal, and manipulation
+
+🔹 Practice Levels
 
 Level 1: Basic array operations
 
-Level 2: Searching, counting, and logical array problems
+Level 2: Searching, counting, and logical problems
 
-Maintained consistent formatting and naming standards.
-
-Programs were stored under the arrays folder.
+📁 Programs were stored under the arrays folder.
 
 🔗 Reference:
 👉 Day 5 – Array Programs
@@ -131,17 +142,19 @@ Programs were stored under the arrays folder.
 📅 Date: 20 December 2025
 🔁 Focus: Modular & Reusable Code
 
-Implemented Java methods to improve code reusability.
+🔹 Practice
 
-Solved problems categorized into:
+Implemented Java methods to improve reusability
+
+🔹 Problem Levels
 
 Level 1: Basic method creation
 
 Level 2: Parameterized and return-type methods
 
-Level 3: Multiple-method logic problems
+Level 3: Multiple-method logical problems
 
-Introduced a new methods folder under gcr-codebase.
+📁 Introduced a new methods folder under gcr-codebase.
 
 🔗 Reference:
 👉 Day 6 – Java Methods
@@ -150,9 +163,7 @@ Introduced a new methods folder under gcr-codebase.
 
 📅 Date: 22 December 2025
 
-Explored Java String concepts and operations.
-
-Practiced problems involving:
+🔹 Topics Covered
 
 String creation and comparison
 
@@ -160,7 +171,7 @@ Character-level manipulation
 
 Logical string-based challenges
 
-Added a dedicated strings directory.
+📁 Added a dedicated strings directory.
 
 🔗 Reference:
 👉 Day 7 – Java Strings
@@ -170,11 +181,7 @@ Added a dedicated strings directory.
 📅 Date: 23 December 2025
 🚀 Focus: Exploring Beyond Core Java
 
-Worked on additional Java programs to strengthen understanding.
-
-Created an extras folder inside gcr-codebase.
-
-Topics included:
+🔹 Topics Practiced
 
 Advanced String operations
 
@@ -182,11 +189,14 @@ Java Date & Time API
 
 Built-in utility methods
 
+📁 Created an extras folder inside gcr-codebase.
+
 📂 Extras Folder Structure
+~~~
 extras
 ├── string-handling
-├── stringdatetime
-└── additional-programming
+├── dateAndTime
+└── Built-in-functions
 
 
 🔗 Reference:
@@ -198,8 +208,8 @@ By the end of Week 1, I gained confidence in:
 
 Using Git & GitHub efficiently
 
-Writing clean, readable Java code
+Writing clean, readable, and maintainable Java code
 
-Organizing projects in a professional manner
+Organizing projects in a professional structure
 
 Building logical thinking through structured problem-solving
