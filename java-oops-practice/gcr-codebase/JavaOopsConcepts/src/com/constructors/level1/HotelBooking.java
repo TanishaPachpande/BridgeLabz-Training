@@ -15,7 +15,7 @@ public class HotelBooking {
 	}
 	
 	// Parameterized constructor
-    HotelBooking(String guestName, String roomType, int nights) {
+    HotelBooking(String guestName, String roomType, int nights){
 		this.guestName=guestName;
 		this.roomType=roomType;
 		this.nights=nights;
