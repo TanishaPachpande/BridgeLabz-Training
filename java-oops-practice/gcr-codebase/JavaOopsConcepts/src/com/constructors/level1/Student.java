@@ -19,7 +19,7 @@ public class Student {
 
     // Setter method
     public void setCGPA(double cgpa) {
-        if (cgpa >= 0 && cgpa <= 10) {
+        if (cgpa >= 0 && cgpa <= 10){
             this.cgpa = cgpa;
         } else {
             System.out.println("Invalid CGPA");
