@@ -23,7 +23,7 @@ public class CarRental {
 		System.out.println("The Total Cost is "+ pricePerDay*rentalDays);
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		CarRental c = new CarRental("Ashish", "xyz", 5);
 		c.displayTotalCost();
 	}
