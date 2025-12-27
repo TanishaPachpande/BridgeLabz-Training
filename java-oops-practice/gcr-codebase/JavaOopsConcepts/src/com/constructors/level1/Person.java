@@ -19,7 +19,7 @@ public class Person {
 	}
 	
 	// Method to display details of a person
-	void displayDetails() {
+	void displayDetails(){
 		System.out.println("Name of person is "+name);
 		System.out.println("Age of person is "+age);;
 	}
