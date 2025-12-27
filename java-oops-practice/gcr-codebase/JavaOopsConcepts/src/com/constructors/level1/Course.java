@@ -17,7 +17,7 @@ public class Course {
     }
 
     // Instance method
-    public void displayCourseDetails() {
+    public void displayCourseDetails(){
         System.out.println("Course Name: " + courseName);
         System.out.println("Duration: " + duration);
     }
