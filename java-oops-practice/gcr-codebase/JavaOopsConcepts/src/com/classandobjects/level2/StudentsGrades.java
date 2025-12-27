@@ -13,7 +13,7 @@ public class StudentsGrades {
 		this.marks=marks;
 	}
 	//creating method to calculate grade
-	public String calculateGrade(double[] marks ) {
+	public String calculateGrade(double[] marks ){
 		//variable to store the totalmarks
 		double totalMarks = calculateTotalMarks(marks);
 		
