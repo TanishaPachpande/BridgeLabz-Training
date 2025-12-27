@@ -20,7 +20,7 @@ public class BookLibrarySystem {
     }
 
     // Public getter for author
-    public String getAuthor() {
+    public String getAuthor(){
         return author;
     }
 }
