@@ -23,7 +23,7 @@ public class Product {
     }
 
     // Class method
-    public static void displayTotalProducts() {
+    public static void displayTotalProducts(){
         System.out.println("Total Products Created: " + totalProducts);
     }
     
