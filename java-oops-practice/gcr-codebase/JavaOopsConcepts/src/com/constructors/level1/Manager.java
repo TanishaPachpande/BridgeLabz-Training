@@ -17,7 +17,7 @@ public class Manager extends Employee {
 	    }
 
 	    // MAIN METHOD
-	    public static void main(String[] args) {
+	    public static void main(String[] args){
 
 	        Manager mgr = new Manager(
 	                501,
