@@ -17,7 +17,7 @@ public class LibraryBook {
 		}
 		
 		// Parameterized constructor
-		LibraryBook(String title, String author, int price, boolean availability) {
+		LibraryBook(String title, String author, int price, boolean availability){
 			this.title=title;
 			this.author=author;
 			this.price=price;
