@@ -14,7 +14,7 @@ public class Employee {
     }
 
     // Public method to modify salary
-    public void setSalary(double salary) {
+    public void setSalary(double salary){
         if (salary > 0) {
             this.salary = salary;
         } else {
