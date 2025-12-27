@@ -15,7 +15,7 @@ public class Vehicle {
     }
 
     // Instance method
-    public void displayVehicleDetails() {
+    public void displayVehicleDetails(){
         System.out.println("Owner Name: " + ownerName);
         System.out.println("Vehicle Type: " + vehicleType);
     }
