@@ -10,7 +10,7 @@ public class PalindromeChecker {
 		
 	}
 	//Creating the method to check its palindrome or not
-	public boolean isPalindrome() {
+	public boolean isPalindrome(){
 	//To remove the space and return consistent text
 	String cleantext=text.replaceAll("\\s","").toLowerCase();
 	
