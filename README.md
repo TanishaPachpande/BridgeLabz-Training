@@ -1,215 +1,220 @@
-🚀 Week 1: Git, GitHub & Core Java Fundamentals
+# Week 1: Git, GitHub & Java Programming Fundamentals
 
-This week focused on building a strong foundation in Git & GitHub along with Core Java programming basics, emphasizing clean coding practices, logical thinking, and proper project organization.
+## 📅 Day 1 – Git & GitHub Setup  
+**(Date: 15-Dec-2025)**
 
-📆 Day 1 – Git & GitHub Environment Setup
+- Installed and configured Git.
+- Set up GitHub repository.
 
-📅 Date: 15 December 2025
+📁 **Project Folder Structure**
 
-🔹 Key Learnings
-
-Installed Git and completed initial configuration
-
-Created and connected a GitHub repository
-
-Understood repository structure and branch usage
-
-Successfully pushed initial project files to GitHub
-
-📂 Project Directory Layout
-~~~
+```
 BridgeLabz-Training
 │
 ├── core-java-practice
+│   │
 │   ├── gcr-codebase
 │   │   ├── programming-elements
 │   │   ├── control-flow
 │   │   ├── arrays
-│   │   └── program-prerequisite
+│   │   └── program-prerequisites
 │   │
 │   ├── scenario-based
+│   │
 │   └── leet-code-codebase
 │
 └── README.md
-~~~
-🔧 Git Commands Practiced
+```
 
-git init
 
-git branch
 
-git checkout
+- Learned basic Git commands (`init`, `branch`, `checkout`, `add`, `commit`, `push`).
+- Successfully pushed files to the remote repository.
 
-git add
+## 📅 Day 2 – Git Practice & Basic Java Programs   
+**(Date: 16-Dec-2025)**
+**(Focus: Writing Clean & Professional Java Code)**
 
-git commit
+- Practiced Git workflow to understand commits and version control.
+- Solved very basic Java programs to understand syntax and structure.
+- Practiced adding, committing, and pushing Java files to GitHub.
 
-git push
+- Started writing Java code in a **professional and industry-standard manner**, following:
+  - Proper **naming conventions** (class names, variables, methods)
+  - Clean and readable **indentation**
+  - Meaningful **comments** for better understanding
+  - Structured and consistent **code formatting**
 
-📆 Day 2 – Git Practice & Java Basics
+- Gained hands-on experience in organizing programs for better **maintainability and readability**.
 
-📅 Date: 16 December 2025
-🎯 Focus: Writing Readable & Professional Java Code
+- All practice programs were stored systematically under the `programming-elements` module.
 
-🔹 Activities
+🔗 *Code Link:*  
+👉 [Day 2 – Basic Java Programs](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisites)
 
-Practiced Git workflows to understand version tracking
 
-Implemented basic Java programs to strengthen syntax knowledge
+## 📅 Day 3 – Java Programming Elements
+**(Date: 17-Dec-2025)**
+- Studied Java programming elements:
+  - Variables and data types
+  - Operators
+  - User input and output
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository.
+
+  🔗 *Code Link:*  
+👉 [Day 3 – Java Programming Elements](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
+
+## 📅 Day 4 – Control Flows  
+**(Date: 18-Dec-2025)**
+**(Logic Building with Conditional & Looping Constructs)**
 
-Regularly committed and pushed code changes to GitHub
+- Worked on **Java Control Flow statements** to strengthen logical thinking.
+- Practice problems were categorized into **three levels**:
+  - **Level 1**: Basic conditional statements (`if`, `if-else`)
+  - **Level 2**: Looping constructs (`for`, `while`, `do-while`)
+  - **Level 3**: Combined logic-based and pattern-oriented problems
 
-🧑‍💻 Coding Standards Followed
+- Emphasized writing **clean, readable, and structured code**.
+- All programs were organized under the `control-flow` folder in `gcr-codebase`.
 
-Meaningful class, method, and variable names
+🔗 *Code Link:*  
+👉 [Day 4 – Java Control Flow](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flow)
 
-Proper indentation and formatting
 
-Clear comments for logic explanation
+## 📅 Day 5 – Java Arrays 
+**(Date:19-Dec-2025)**
+**(Data Storage & Manipulation Techniques)**
 
-Organized file structure for maintainability
+- Learned and practiced **Java Arrays** for handling collections of data.
+- Problems were divided into **two levels**:
+  - **Level 1**: Basic array creation, traversal, and input/output
+  - **Level 2**: Logical problems such as searching, counting, and data manipulation
 
-📁 All programs were stored under the program-prerequisite module.
+- Followed proper **coding standards** with consistent indentation and naming conventions.
+- Programs were stored under the `arrays` folder in `gcr-codebase`.
 
-🔗 Reference:
-👉 Day 2 – Basic Java Programs
+ 🔗 *Code Link:*  
+👉 [Day 5 –Java Arrays](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/arrays)
 
-📆 Day 3 – Java Programming Fundamentals
-
-📅 Date: 17 December 2025
-
-🔹 Concepts Covered
-
-Data types and variables
-
-Operators
-
-Input/output handling using Scanner
-
-🔹 Practice
-
-Solved multiple hands-on problems
-
-Committed and pushed solutions after completion
-
-🔗 Reference:
-👉 Day 3 – Programming Elements
-
-📆 Day 4 – Control Flow Statements
-
-📅 Date: 18 December 2025
-🧠 Focus: Logical Thinking & Flow Control
-
-🔹 Topics Practiced
-
-Conditional and looping constructs in Java
-
-🔹 Problem Levels
-
-Level 1: if, if-else
-
-Level 2: for, while, do-while
-
-Level 3: Logic-based and pattern problems
-
-📁 All programs were organized inside the control-flow directory.
-
-🔗 Reference:
-👉 Day 4 – Control Flow Programs
-
-📆 Day 5 – Java Arrays
-
-📅 Date: 19 December 2025
-📊 Focus: Data Handling Using Arrays
-
-🔹 Learnings
-
-Array creation, traversal, and manipulation
-
-🔹 Practice Levels
-
-Level 1: Basic array operations
-
-Level 2: Searching, counting, and logical problems
-
-📁 Programs were stored under the arrays folder.
-
-🔗 Reference:
-👉 Day 5 – Array Programs
-
-📆 Day 6 – Java Methods
-
-📅 Date: 20 December 2025
-🔁 Focus: Modular & Reusable Code
-
-🔹 Practice
-
-Implemented Java methods to improve reusability
-
-🔹 Problem Levels
-
-Level 1: Basic method creation
-
-Level 2: Parameterized and return-type methods
-
-Level 3: Multiple-method logical problems
-
-📁 Introduced a new methods folder under gcr-codebase.
-
-🔗 Reference:
-👉 Day 6 – Java Methods
-
-📆 Day 7 – Java Strings
-
-📅 Date: 22 December 2025
-
-🔹 Topics Covered
-
-String creation and comparison
-
-Character-level manipulation
-
-Logical string-based challenges
-
-📁 Added a dedicated strings directory.
-
-🔗 Reference:
-👉 Day 7 – Java Strings
-
-📆 Day 8 – Extra Practice & Advanced Concepts
-
-📅 Date: 23 December 2025
-🚀 Focus: Exploring Beyond Core Java
-
-🔹 Topics Practiced
-
-Advanced String operations
-
-Java Date & Time API
-
-Built-in utility methods
-
-📁 Created an extras folder inside gcr-codebase.
-
-📂 Extras Folder Structure
-~~~
-extras
-├── string-handling
-├── dateAndTime
-└── Built-in-functions
-
-
-🔗 Reference:
-👉 Day 8 – Extras & Advanced Practice
-
-✅ Week 1 Outcome
-
-By the end of Week 1, I gained confidence in:
-
-Using Git & GitHub efficiently
-
-Writing clean, readable, and maintainable Java code
-
-Organizing projects in a professional structure
-
-Building logical thinking through structured problem-solving
+## 📅 Day 6 – Java Methods 
+**(Date: 20-Dec-2025)**
+
+- Practiced **Java Methods** to understand modular and reusable code design.
+- Problems were categorized into **three levels**:
+  - **Level 1**: Simple method creation and invocation
+  - **Level 2**: Methods with parameters and return values
+  - **Level 3**: Logical problems using multiple methods
+
+- Added a new **`methods`** folder inside `gcr-codebase`.
+
+📁 **Updated Directory Structure**
+
+```
+BridgeLabz-Training
+│
+├── core-java-practice
+│   │
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   ├── arrays
+│   │   ├── methods
+│   │   └── program-prerequisite
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+└── README.md
+```
+
+
+🔗 *Code Link:*  
+👉 [Day 6 – Java Methods](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/methods)
+
+## 📅 Day 7– Java Strings 
+**(Date: 22-Dec-2025)**
+
+- Worked on **Java String concepts** and operations.
+- Practice problems were divided into **three levels**, focusing on:
+  - String creation and comparison
+  - Character-level operations
+  - Logical string-based problems
+
+- Added a new **`strings`** folder inside `gcr-codebase`.
+
+## 📁 Updated Directory Structure
+
+```
+BridgeLabz-Training
+│
+├── core-java-practice
+│   │
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   ├── arrays
+│   │   ├── methods
+│   │   ├── strings
+│   │   └── program-prerequisite
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+└── README.md
+```
+
+
+
+
+🔗 *Code Link:*  
+👉 [Day 7 – Java Strings](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/strings)
+
+
+---
+
+## 📅 Day 8 – Extras & Advanced Practice  
+**(Date: 23-Dec-2025)**
+**(Extended Java Concepts & Built-in Features)**
+
+- Worked on **additional Java practice programs** beyond core concepts.
+- Created a new **`extras`** folder inside `gcr-codebase`.
+- Practiced problems related to:
+  - **String Handling** (advanced string operations)
+  - **Date & Time** (using Java Date-Time API)
+  - **Built-in Functions** (Java utility and helper methods)
+
+- Organized advanced programs into well-structured subfolders under `extras` for better maintainability.
+  
+## 📁 Updated Folder Structure
+
+```
+BridgeLabz-Training
+│
+├── core-java-practice
+│   │
+│   ├── gcr-codebase
+│   │   ├── programming-elements
+│   │   ├── control-flow
+│   │   ├── arrays
+│   │   ├── methods
+│   │   ├── strings
+│   │   ├── program-prerequisites
+│   │   └── extras
+│   │       ├── string-handling
+│   │       ├── dateAndTime
+│   │       └── Built-in-functions
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+└── README.md
+```
+
+
+
+🔗 *Code Link:*  
+👉 [Day 8– Extras & Advanced Practice ](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/extras)
