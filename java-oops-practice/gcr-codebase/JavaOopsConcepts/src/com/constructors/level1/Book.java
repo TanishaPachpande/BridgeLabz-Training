@@ -10,7 +10,7 @@ public class Book {
 
     // Default constructor
     public Book() {
-        title = "Unknown";
+        title = "Unknown ";
         author = "Unknown";
         price = 0.0;
     }
