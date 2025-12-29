@@ -20,7 +20,7 @@ public class Company {
 	   }
 	   
 	   // Static method to set the company name
-	   public static void setCompanyName(String name) {
+	   public static void setCompanyName(String name){
 	       companyName = name;
 	   }
 	   
