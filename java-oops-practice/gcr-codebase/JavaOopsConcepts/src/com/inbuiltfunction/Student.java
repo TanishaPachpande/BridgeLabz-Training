@@ -25,7 +25,7 @@ public class Student {
 	   }
 	   
 	   // Static method to display the total number of students enrolled
-	   public static void displayTotalStudents() {
+	   public static void displayTotalStudents(){
 	       System.out.println("Total Students Enrolled: " + totalStudents);
 	   }
 	   
