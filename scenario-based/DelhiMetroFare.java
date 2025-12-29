@@ -32,6 +32,7 @@ public class DelhiMetroFare {
                 break;
             }
 
+	    System.out.print("===========================================");
             System.out.print("Do you want to continue? (y/n): ");
             choice = sc.next().charAt(0);
 
