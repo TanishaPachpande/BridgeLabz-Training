@@ -49,7 +49,7 @@ class Book {
 	   }
 }
 
-	public class Library {
+	public class Library{
 	   public static void main(String[] args) {
 	       // Set the library name (static variable)
 	       Book.setLibraryName("Egmore Library");
