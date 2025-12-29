@@ -5,6 +5,7 @@ public static void main(String[] args){
 	Scanner sc = new Scanner(System.in);
 
 	// Taking age as an input
+	System.out.println("Enter age of a candidate:");
 	int age=sc.nextInt();
 
 	// Count for candidate number
@@ -18,6 +19,8 @@ public static void main(String[] args){
 			System.out.println("Candidate "+count+" is not eligible");
 		}
 		count++;
+
+		System.out.println("Enter age: ");
 		age=sc.nextInt();
 	}
 }
