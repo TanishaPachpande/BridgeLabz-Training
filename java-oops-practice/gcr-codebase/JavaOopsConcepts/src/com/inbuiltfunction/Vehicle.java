@@ -18,7 +18,7 @@ public class Vehicle {
 	   }
 	   
 	   // Static method to update the registration fee
-	   public static void updateRegistrationFee(double newFee) {
+	   public static void updateRegistrationFee(double newFee){
 	       if (newFee >= 0.0) {
 	           registrationFee = newFee;
 	       } else {
