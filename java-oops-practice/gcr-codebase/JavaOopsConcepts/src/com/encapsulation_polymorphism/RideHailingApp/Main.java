@@ -20,5 +20,4 @@ public class Main {
 		c.updateLocation("bhopal");
 		System.out.println(c.getCurrentLocation());
 	}
-
 }
