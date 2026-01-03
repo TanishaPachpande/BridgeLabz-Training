@@ -1,9 +1,12 @@
 package BankAccount;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        Account savings = new SavingsAccount(101, 5000, 5);
+        Account savings = new SavingsAccount(10, 10000, 5);
+        
         Customer customer1 = new Customer(1, "Tanisha", savings);
 
         customer1.showDetails();
