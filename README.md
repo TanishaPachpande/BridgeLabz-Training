@@ -74,7 +74,7 @@ BridgeLabz-Training
 - Designed programs following clean code and maintainable architecture.
 
 🔗 *Code Link:*  
-👉 [Day 12 – Java Object Oriented Design](https://github.com/vikash8058/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/control-flows)
+👉 [Day 12 – Java Object Oriented Design](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 
 
 ## 📅 Day 13 – Inheritance
