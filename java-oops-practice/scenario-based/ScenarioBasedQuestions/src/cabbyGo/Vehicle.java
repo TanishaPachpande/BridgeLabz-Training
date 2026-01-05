@@ -1,37 +1,25 @@
-package cabbyGo;
+package cabbygo;
 
-public class Vehicle implements IRideService {
-	private int vehicleNumber;
-	private int capacity;
-	public String type;
-	
-	public int getVehicleNumber() {
-		return vehicleNumber;
-	}
-	
-	public int getCapacity() {
-		return capacity;
-	}
-	
-	public Vehicle(int vehicleNumber, int capacity, String type) {
-		this.vehicleNumber = vehicleNumber;
-		this.capacity = capacity;
-		this.type = type;
-	}
+public abstract class Vehicle {
+    protected String vehicleNumber;
+    protected int capacity;
+    protected String type;
+    protected double ratePerKm;
 
-	@Override
-	public void bookRide() {
-		System.out.println("Your ride with "+ type + " is booked");
-	}
+    public Vehicle(String vehicleNumber, int capacity, String type, double ratePerKm) {
+        this.vehicleNumber = vehicleNumber;
+        this.capacity = capacity;
+        this.type = type;
+        this.ratePerKm = ratePerKm;
+    }
 
-	@Override
-	public void endRide() {
-		System.out.println("Your ride with "+ type + " has ended");
-	}
-	
-	public void displayVehicleDetails() {
-		System.out.println("Vehicle Number: "+ vehicleNumber);
-		System.out.println("Capacity: "+ capacity);
-		System.out.println("Type: "+ type);
-	}
+    public double calculateFare(double distance) {
+        double baseFare = 50;
+        return baseFare + distance * ratePerKm;
+    }
+
+    public String getType() {
+        return type;
+    }
 }
+
