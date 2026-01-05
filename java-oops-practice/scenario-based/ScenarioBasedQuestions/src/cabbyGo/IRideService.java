@@ -1,6 +1,7 @@
-package cabbyGo;
+package cabbygo;
 
 public interface IRideService {
-	void bookRide();
-	void endRide();
+    void bookRide(Vehicle vehicle, Driver driver, double distance);
+    void endRide();
 }
+
