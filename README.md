@@ -347,5 +347,68 @@ BridgeLabz-Training
 └── README.md
 ```
 
+# Week 3: Data Structures
+
+## 📅 Day 15 – Linked List  
+**(Date: 02-Jan-2025)**
+
+- Learned Linked List basics
+- Worked on Single, Double, Circular linked list
+
+📁 **Project Folder Structure**
+
+```
+BridgeLabz-Training
+│
+├── dsa-practice
+│   │
+│   ├── gcr-codebase
+│   │   ├── linkedlist
+│   │   ├── stackqueue
+│   │   ├── hashmap
+│   │   └── sortingalgorithm
+│   │
+│   ├── scenario-based
+│   │
+│   └── leet-code-codebase
+│
+└── README.md
+```
+
+
+
+## 📅 Day 2 – Git Practice & Basic Java Programs   
+**(Date: 16-Dec-2025)**
+**(Focus: Writing Clean & Professional Java Code)**
+
+- Practiced Git workflow to understand commits and version control.
+- Solved very basic Java programs to understand syntax and structure.
+- Practiced adding, committing, and pushing Java files to GitHub.
+
+- Started writing Java code in a **professional and industry-standard manner**, following:
+  - Proper **naming conventions** (class names, variables, methods)
+  - Clean and readable **indentation**
+  - Meaningful **comments** for better understanding
+  - Structured and consistent **code formatting**
+
+- Gained hands-on experience in organizing programs for better **maintainability and readability**.
+
+- All practice programs were stored systematically under the `programming-elements` module.
+
+🔗 *Code Link:*  
+👉 [Day 2 – Basic Java Programs](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/program-prerequisites)
+
+
+## 📅 Day 3 – Java Programming Elements
+**(Date: 17-Dec-2025)**
+- Studied Java programming elements:
+  - Variables and data types
+  - Operators
+  - User input and output
+- Solved practice problems based on programming elements.
+- Committed and pushed solutions to the repository.
+
+  🔗 *Code Link:*  
+👉 [Day 3 – Java Programming Elements](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/core-java-practice/gcr-codebase/programming-elements)
 
 
