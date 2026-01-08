@@ -8,7 +8,6 @@ class CardioWorkout extends Workout {
         this.caloriesBurned = calculateCalories();
     }
 
-    @Override
     public int calculateCalories() {
         return duration * 8; // higher burn rate
     }
