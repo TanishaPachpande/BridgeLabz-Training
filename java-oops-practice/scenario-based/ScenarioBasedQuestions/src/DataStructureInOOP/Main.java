@@ -11,11 +11,11 @@ public class Main {
 		Product p3 = new Product("bottle", 1, 50);
 		
 		List<Product> list = new ArrayList<>();
-		list.add(p1);
-		list.add(p2);
-		list.add(p3);
 		
 		Cart c =new Cart(list);
+		c.addProduct(p1);
+		c.addProduct(p2);
+		c.addProduct(p3);
 		c.displayCartItems();
 	}
 }
