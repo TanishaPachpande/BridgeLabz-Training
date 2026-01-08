@@ -8,5 +8,4 @@ public class Car extends Vehicle{
 		super(vehicleNumber, model);
 		this.isDiesel=isDiesel;	
     }
-	
 }
