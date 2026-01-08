@@ -376,7 +376,7 @@ BridgeLabz-Training
 ```
 
 🔗 *Code Link:*  
-👉 [Day 15 – Basic Java Programs](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linkedlist)
+👉 [Day 15 – Linked List](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linkedlist)
 
 
 ## 📅 Day 16 – Stack, Queue, Hashmap, and HashFunction  
