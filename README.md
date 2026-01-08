@@ -441,5 +441,8 @@ BridgeLabz-Training
   - Commonly used with System.in
 
   🔗 *Code Link:*  
-👉 [Day 18 – Linear Search and Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/sortingalgorithms)
+👉 [Day 18 – InputStreamReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader)
+👉 [Day 18 – FileReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader)
+👉 [Day 18 – String Buffer](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer)
+👉 [Day 18 – String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
 
