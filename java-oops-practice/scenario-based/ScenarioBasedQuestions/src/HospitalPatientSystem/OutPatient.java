@@ -8,7 +8,6 @@ class OutPatient extends Patient {
         this.visitDate = visitDate;
     }
 
-    @Override
     public void displayInfo() {
         System.out.println(getSummary() + ", Visit Date: " + visitDate);
     }
