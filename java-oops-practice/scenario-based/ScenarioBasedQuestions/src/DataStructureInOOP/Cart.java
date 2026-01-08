@@ -20,5 +20,4 @@ public class Cart {
 			product.displayDetails();
 		}
 	}
-	
 }
