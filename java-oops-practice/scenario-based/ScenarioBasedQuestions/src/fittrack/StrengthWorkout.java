@@ -8,7 +8,6 @@ class StrengthWorkout extends Workout {
         this.caloriesBurned = calculateCalories();
     }
 
-    @Override
     public int calculateCalories() {
         return duration * 5;
     }
