@@ -44,7 +44,7 @@ public class StudentLinkedList {
         StudentNode newNode = new StudentNode(rollNo, name, age, grade);
         StudentNode temp = head;
 
-        for (int i = 1; i < position - 1 && temp != null; i++) {
+        for (int i = 1; 1 < position - 1 && temp != null; i++) {
             temp = temp.next;
         }
 
