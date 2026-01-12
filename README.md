@@ -98,3 +98,18 @@ BridgeLabz-Training
 👉 [Day 18 – String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
 👉 [Day 18 – Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch)
 👉 [Day 18 – Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
+
+
+## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
+**(Date: 07-Jan-2026)**
+
+- Runtime Analysis: Learned how the algorithm's execution time grows as the input size grow
+- Big-O Notation: Understood Big-O notation that represents the upper bound of an algorithm’s time or space growth with respect to input size
+- Cases: Worst, Average, and Best cases describe the maximum, expected, and minimum performance of an algorithm for different inputs
+- Optimizing Java code involves choosing efficient algorithms and data structures to reduce time and space complexity
+- Time Complexity Analysis: measures the number of operations an algorithm performs relative to the input size
+- Space Complexity Analysis: determines the amount of extra memory an algorithm requires during execution
+
+  🔗 *Code Link:*  
+👉 [Day 19 – Runtime Analysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
+
