@@ -350,7 +350,7 @@ BridgeLabz-Training
 # Week 3: Data Structures and Algorithms
 
 ## 📅 Day 15 – Linked List  
-**(Date: 02-Jan-2025)**
+**(Date: 02-Jan-2026)**
 
 - Learned Linked List and it's types
 - Worked on Single, Double, Circular linked list
@@ -380,7 +380,7 @@ BridgeLabz-Training
 
 
 ## 📅 Day 16 – Stack, Queue, Hashmap, and HashFunction  
-**(Date: 03-Jan-2025)**
+**(Date: 03-Jan-2026)**
 **(Focus: Learning Stack, Queue, Hashmap and Hashfunction with proper implementation)**
 
 - Stack:  
@@ -405,7 +405,7 @@ BridgeLabz-Training
 
 
 ## 📅 Day 17 – Sorting Algorithms
-**(Date: 05-Jan-2025)**
+**(Date: 05-Jan-2026)**
 - Learned to arrange elements in ascending or descending order
 - Implemented common algorithms like:
   - Bubble sort
@@ -421,7 +421,7 @@ BridgeLabz-Training
 👉 [Day 17 – Sorting algorithms](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/sortingalgorithms)
 
 ## 📅 Day 18 – Linear Search and Binary Search, StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader
-**(Date: 06-Jan-2025)**
+**(Date: 06-Jan-2026)**
 **(Focus: Learning and implementation)**
 
 - Linear Search & Binary Search:  
@@ -447,3 +447,16 @@ BridgeLabz-Training
 👉 [Day 18 – String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
 👉 [Day 18 – Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch)
 👉 [Day 18 – Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
+
+## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
+**(Date: 07-Jan-2026)**
+
+- Runtime Analysis: Learned how the algorithm's execution time grows as the input size grow
+- Big-O Notation: Understood Big-O notation that represents the upper bound of an algorithm’s time or space growth with respect to input size
+- Cases: Worst, Average, and Best cases describe the maximum, expected, and minimum performance of an algorithm for different inputs
+- Optimizing Java code involves choosing efficient algorithms and data structures to reduce time and space complexity
+- Time Complexity Analysis: measures the number of operations an algorithm performs relative to the input size
+- Space Complexity Analysis: determines the amount of extra memory an algorithm requires during execution
+
+  🔗 *Code Link:*  
+👉 [Day 19 – Runtime Analysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
