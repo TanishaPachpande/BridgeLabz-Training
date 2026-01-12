@@ -68,7 +68,7 @@ BridgeLabz-Training
   - Quick sort
 - Compared elements and swapped them to achieve correct order
 
-  🔗 *Code Link:*  
+🔗 *Code Link:*  
 👉 [Day 17 – Sorting algorithms](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/sortingalgorithms)
 
 ## 📅 Day 18 – Linear Search and Binary Search, StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader
@@ -91,7 +91,7 @@ BridgeLabz-Training
   - Converts byte streams to character streams
   - Commonly used with System.in
 
-  🔗 *Code Link:*
+🔗 *Code Link:*
   
 👉 [Day 18 – InputStreamReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader)
 
@@ -116,6 +116,6 @@ BridgeLabz-Training
 - Time Complexity Analysis: measures the number of operations an algorithm performs relative to the input size
 - Space Complexity Analysis: determines the amount of extra memory an algorithm requires during execution
 
-  🔗 *Code Link:*  
+🔗 *Code Link:*  
 👉 [Day 19 – Runtime Analysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
 
