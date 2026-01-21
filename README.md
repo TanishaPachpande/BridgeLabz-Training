@@ -1,6 +1,6 @@
 # Week 2: Object-oriented Programming Fundamental
 
-## 📅 Day 9 – Java Class and Object 
+## 📅 Day 1 – Java Class and Object 
 **(Date: 26-Dec-2025)**
 
 - Installed Eclipse.
@@ -28,9 +28,9 @@ BridgeLabz-Training
 - Successfully pushed files to the remote repository.
 
   🔗 *Code Link:*  
-👉 [Day 9 – Java Class and Object](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobjects)
+👉 [Day 1 – Java Class and Object](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobjects)
 
-## 📅 Day 10 – Java Constructors, Instance vs. Class Variables, Access Modifiers 
+## 📅 Day 2 – Java Constructors, Instance vs. Class Variables, Access Modifiers 
 **(Date: 27-Dec-2025)**
 **(Focus: Writing Clean & Professional Java Code)**
 
@@ -48,10 +48,10 @@ BridgeLabz-Training
 - Gained hands-on experience in organizing programs for better **maintainability and readability**.
 
 🔗 *Code Link:*  
-👉 [Day 10 – Java Constructors](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
+👉 [Day 2 – Java Constructors](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
 
 
-## 📅 Day 11 – this, static, final key words and instanceof operator
+## 📅 Day 3 – this, static, final key words and instanceof operator
 **(Date: 29-Dec-2025)**
 - Learned the usage of the this keyword to refer to current class objects.
 - Understood the purpose of the static keyword for variables, methods, and blocks.
@@ -59,9 +59,9 @@ BridgeLabz-Training
 - Wrote programs to verify object–class relationships using instanceof.
 
   🔗 *Code Link:*  
-👉 [Day 11 – Java key words and instanceof operator](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
+👉 [Day 3 – Java key words and instanceof operator](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
 
-## 📅 Day 12 – Object Oriented Design Principles  
+## 📅 Day 4 – Object Oriented Design Principles  
 **(Date: 30-Dec-2025)**
 
 - Learned the fundamentals of Object-Oriented Design (OOD) principles.
@@ -74,10 +74,10 @@ BridgeLabz-Training
 - Designed programs following clean code and maintainable architecture.
 
 🔗 *Code Link:*  
-👉 [Day 12 – Java Object Oriented Design](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
+👉 [Day 4 – Java Object Oriented Design](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 
 
-## 📅 Day 13 – Inheritance
+## 📅 Day 5 – Inheritance
 **(Date:31-Dec-2025)**
 
 - Single Level Inheritance
@@ -90,9 +90,9 @@ BridgeLabz-Training
  - Access Modifiers and Inheritance
 
  🔗 *Code Link:*  
-👉 [Day 13 –Inheritance](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance)
+👉 [Day 5 –Inheritance](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance)
 
-## 📅 Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class 
+## 📅 Day 6 – Encapsulation, Polymorphism, Interface and Abstract Class 
 **(Date: 31-Dec-2025)**
 
 - Learned the concept of Encapsulation to protect data using access modifiers.
@@ -102,7 +102,7 @@ BridgeLabz-Training
 - Understood the concept of Abstract Classes and abstract methods.
 
 🔗 *Code Link:*  
-👉 [Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation_polymorphism)
+👉 [Day 6 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation_polymorphism)
 
 📁 **Updated Directory Structure**
 
@@ -115,9 +115,9 @@ BridgeLabz-Training
 │   │   ├── classandobjects
 │   │   ├── inheritance
 │   │   ├── objectmodeling
-│   │   ├── abstraction
+│   │   ├── constructor
 │   │   └── encapsulation_polymorphism
-│   │
+│   │   
 │   ├── scenario-based
 │   │
 │   └── leet-code-codebase
