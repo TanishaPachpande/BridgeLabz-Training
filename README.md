@@ -52,7 +52,7 @@ BridgeLabz-Training
 
 🔗 *Code Links:*  
 👉 [Day 2 – Stack & Queue](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue)  
-👉 [Day 2 – HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
+👉 [HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
 
 
 ## 📅 Day 3 – Sorting Algorithms
