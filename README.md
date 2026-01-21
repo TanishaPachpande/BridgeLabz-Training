@@ -52,7 +52,7 @@ BridgeLabz-Training
 
 🔗 *Code Links:*  
 👉 [Day 2 – Stack & Queue](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue)  
-👉 [HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
+[ HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
 
 
 ## 📅 Day 3 – Sorting Algorithms
@@ -81,15 +81,15 @@ BridgeLabz-Training
   
 👉 [Day 4 – InputStreamReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader)
 
-👉 [Day 4 – FileReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader)
+[ FileReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader)
 
-👉 [Day 4 – String Buffer](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer)
+[ String Buffer](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer)
 
-👉 [Day 4 – String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
+[ String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
 
-👉 [Day 4 – Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch)
+[ Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch)
 
-👉 [Day 4 – Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
+[ Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
 
 
 ## 📅 Day 5 – Algorithm's Runtime Analysis & Big-O Notation
