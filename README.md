@@ -51,7 +51,7 @@ BridgeLabz-Training
 - Organized all Stack, Queue, and Hashing programs systematically in the DSA practice branch.
 
 🔗 *Code Links:*  
-👉 [Day 2 – Stack & Queue](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue), [ HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
+👉 [Day 2 – Stack & Queue,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue) [ HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
 
 
 ## 📅 Day 3 – Sorting Algorithms
@@ -78,7 +78,7 @@ BridgeLabz-Training
 
 🔗 *Code Link:*
   
-👉 [Day 4 – InputStreamReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader), [ FileReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader), [ String Buffer](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer), [ String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder), [ Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch), [ Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
+👉 [Day 4 – InputStreamReader,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader) [ FileReader,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader) [ String Buffer,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer) [ String Builder,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder) [ Linear Search,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch) [ Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
 
 
 ## 📅 Day 5 – Algorithm's Runtime Analysis & Big-O Notation
