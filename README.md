@@ -222,7 +222,7 @@ BridgeLabz-Training
 
 # Week 2: Object-oriented Programming Fundamental
 
-## 📅 Day 9 – Java Class and Object 
+## 📅 Day 1 – Java Class and Object 
 **(Date: 26-Dec-2025)**
 
 - Installed Eclipse.
@@ -250,9 +250,9 @@ BridgeLabz-Training
 - Successfully pushed files to the remote repository.
 
   🔗 *Code Link:*  
-👉 [Day 9 – Java Class and Object](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobjects)
+👉 [Day 1 – Java Class and Object](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/classandobjects)
 
-## 📅 Day 10 – Java Constructors, Instance vs. Class Variables, Access Modifiers 
+## 📅 Day 2 – Java Constructors, Instance vs. Class Variables, Access Modifiers 
 **(Date: 27-Dec-2025)**
 **(Focus: Writing Clean & Professional Java Code)**
 
@@ -270,10 +270,10 @@ BridgeLabz-Training
 - Gained hands-on experience in organizing programs for better **maintainability and readability**.
 
 🔗 *Code Link:*  
-👉 [Day 10 – Java Constructors](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
+👉 [Day 2 – Java Constructors](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/constructors/level1)
 
 
-## 📅 Day 11 – this, static, final key words and instanceof operator
+## 📅 Day 3 – this, static, final key words and instanceof operator
 **(Date: 29-Dec-2025)**
 - Learned the usage of the this keyword to refer to current class objects.
 - Understood the purpose of the static keyword for variables, methods, and blocks.
@@ -281,9 +281,9 @@ BridgeLabz-Training
 - Wrote programs to verify object–class relationships using instanceof.
 
   🔗 *Code Link:*  
-👉 [Day 11 – Java key words and instanceof operator](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
+👉 [Day 3 – Java key words and instanceof operator](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inbuiltfunction)
 
-## 📅 Day 12 – Object Oriented Design Principles  
+## 📅 Day 4 – Object Oriented Design Principles  
 **(Date: 30-Dec-2025)**
 
 - Learned the fundamentals of Object-Oriented Design (OOD) principles.
@@ -296,10 +296,10 @@ BridgeLabz-Training
 - Designed programs following clean code and maintainable architecture.
 
 🔗 *Code Link:*  
-👉 [Day 12 – Java Object Oriented Design](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
+👉 [Day 4 – Java Object Oriented Design](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/objectmodeling)
 
 
-## 📅 Day 13 – Inheritance
+## 📅 Day 5 – Inheritance
 **(Date:31-Dec-2025)**
 
 - Single Level Inheritance
@@ -312,9 +312,9 @@ BridgeLabz-Training
  - Access Modifiers and Inheritance
 
  🔗 *Code Link:*  
-👉 [Day 13 –Inheritance](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance)
+👉 [Day 5 –Inheritance](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/inheritance)
 
-## 📅 Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class 
+## 📅 Day 6 – Encapsulation, Polymorphism, Interface and Abstract Class 
 **(Date: 31-Dec-2025)**
 
 - Learned the concept of Encapsulation to protect data using access modifiers.
@@ -324,7 +324,7 @@ BridgeLabz-Training
 - Understood the concept of Abstract Classes and abstract methods.
 
 🔗 *Code Link:*  
-👉 [Day 14 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation_polymorphism)
+👉 [Day 6 – Encapsulation, Polymorphism, Interface and Abstract Class](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-oops-practice/java-oops-practice/gcr-codebase/JavaOopsConcepts/src/com/encapsulation_polymorphism)
 
 📁 **Updated Directory Structure**
 
@@ -337,9 +337,9 @@ BridgeLabz-Training
 │   │   ├── classandobjects
 │   │   ├── inheritance
 │   │   ├── objectmodeling
-│   │   ├── abstraction
+│   │   ├── constructor
 │   │   └── encapsulation_polymorphism
-│   │
+│   │   
 │   ├── scenario-based
 │   │
 │   └── leet-code-codebase
@@ -349,12 +349,14 @@ BridgeLabz-Training
 
 # Week 3: Data Structures and Algorithms
 
-## 📅 Day 15 – Linked List  
-**(Date: 02-Jan-2026)**
+## 📅 Day 1 – Linked List  
+**(Date: 02-Jan-2025)**
 
-- Learned Linked List and it's types
-- Worked on Single, Double, Circular linked list
-- Implemented insertion, deletion, and traversal operation over linked list
+- Learned the fundamentals of Data Structures and Algorithms (DSA) and their importance in efficient problem-solving.
+- Understood how data structures help in organizing and managing data for optimized performance.
+- Studied Linked List as a dynamic linear data structure that uses nodes instead of contiguous memory.
+- Learned the structure of a node containing data and references (links).
+- Explored different types of Linked Lists: Singly, Doubly, and Circular Linked List.
 
 📁 **Project Folder Structure**
 
@@ -366,103 +368,160 @@ BridgeLabz-Training
 │   ├── gcr-codebase
 │   │   ├── linkedlist
 │   │   ├── stackqueue
-│   │   ├── hashmap
+│   │   ├── hashmaps
 │   │   └── sortingalgorithms
+│   │   ├── linearsearch
+│   │   ├── runtimeanalysis
+│   │   └── stringbuilder
+│   │   └── stringbuffer
+│   │   ├── binarysearch
+│   │   ├── filereader
+│   │   └── inputstreamreader
 │   │
 │   ├── scenario-based
-│    
 │
 └── README.md
 ```
 
 🔗 *Code Link:*  
-👉 [Day 15 – Linked List](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linkedlist)
+👉 [Day 1 – Basic Java Programs](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linkedlist)
 
 
-## 📅 Day 16 – Stack, Queue, Hashmap, and HashFunction  
-**(Date: 03-Jan-2026)**
+## 📅 Day 2 – Stack, Queue, Hashmap, and HashFunction  
+**(Date: 03-Jan-2025)**
 **(Focus: Learning Stack, Queue, Hashmap and Hashfunction with proper implementation)**
 
-- Stack:  
-  - Follows LIFO(Last In First Out) principle
-  - push, pop, peek operations
-
-- Queue:
-  - Follows FIFO(First In First Out) principle
-  - enqueue, dequeue, peek operations
-
-- Hashmap:
-  - Stores key–value pairs and uses unique keys
-  - Fast insertion and retrieval
-
-- Hashfunction:
-  - Converts keys into index values
-  - Helps in fast data access
+- Learned the fundamentals of Stack as a linear data structure that follows the LIFO (Last In, First Out) principle.
+- Understood common Stack operations such as push, pop, peek, and isEmpty.
+- Studied Queue as a linear data structure that follows the FIFO (First In, First Out) principle.
+- Learned Queue operations including enqueue, dequeue, front, and rear.
+- Understood how HashMap stores data in key–value pairs using hashing.
+- Practiced implementing Stack, Queue, and HashMap concepts using Java.
+- Organized all Stack, Queue, and Hashing programs systematically in the DSA practice branch.
 
 🔗 *Code Links:*  
-👉 [Day 16 – Stack & Queue](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue)  
-👉 [Day 16 – HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
+👉 [Day 2 – Stack & Queue,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stackqueue) [ HashMap & Hash Function](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/hashmaps)
 
 
-## 📅 Day 17 – Sorting Algorithms
-**(Date: 05-Jan-2026)**
-- Learned to arrange elements in ascending or descending order
-- Implemented common algorithms like:
-  - Bubble sort
-  - Merge sort
-  - Heap sort
-  - Insertion sort
-  - Selection sort
-  - Counting sort
-  - Quick sort
-- Compared elements and swapped them to achieve correct order
+## 📅 Day 3 – Sorting Algorithms
+**(Date: 05-Jan-2025)**
+- Studied the importance of sorting algorithms for organizing data efficiently and improving search performance.
+- Learned Bubble Sort by repeatedly comparing adjacent elements and swapping them to sort data step by step.
+- Understood Selection Sort, where the minimum element is selected and placed at the correct position in each iteration.
+- Practiced Insertion Sort, inserting elements into their correct position in the already sorted part of the array.
+- Explored Merge Sort using the divide-and-conquer approach to recursively split and merge arrays.
+- Learned Quick Sort, selecting a pivot element and partitioning the array around the pivot.
+- Compared sorting algorithms based on time complexity, space complexity, and stability.
 
-  🔗 *Code Link:*  
-👉 [Day 17 – Sorting algorithms](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/sortingalgorithms)
+🔗 *Code Link:*  
+👉 [Day 3 – Sorting algorithms](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/sortingalgorithms)
 
-## 📅 Day 18 – Linear Search and Binary Search, StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader
-**(Date: 06-Jan-2026)**
+## 📅 Day 4 – Linear Search and Binary Search, StringBuilder, StringBuffer, BufferedReader, FileReader, InputStreamReader
+**(Date: 06-Jan-2025)**
 **(Focus: Learning and implementation)**
 
-- Linear Search & Binary Search:  
-  - Linear Search: checks elements one by one
-  - Binary Search: works on sorted data, divides search space
+- Studied StringBuffer and StringBuilder to understand mutable string operations and performance differences.
+- Learned searching techniques including linear search and binary search for efficient data retrieval.   
+- Practiced file handling using BufferedReader for reading data efficiently from files
+- Focused on writing clean, optimized, and readable Java code following core Java best practices.
 
-- StringBuilder & StringBuffer:
-  - StringBuilder: faster, not thread-safe, mutable
-  - StringBuffer: thread-safe, slower, mutable
-    
-- BufferedReader & FileReader:
-  - BufferReader is used to read text efficiently and it wraps another reader for better performance
-  - FileReader is used to read data from files and it reads character-by-character or line-by-line
-    
-- InputStreamReader:
-  - Converts byte streams to character streams
-  - Commonly used with System.in
-
-  🔗 *Code Links:*
+🔗 *Code Link:*
   
-👉 [Day 18 – InputStreamReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader)
+👉 [Day 4 – InputStreamReader,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/inputstreamreader) [ FileReader,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader) [ String Buffer,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer) [ String Builder,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder) [ Linear Search,](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch) [ Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
 
-👉 [Day 18 – FileReader](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/filereader)
 
-👉 [Day 18 – String Buffer](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuffer)
-
-👉 [Day 18 – String Builder](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/stringbuilder)
-
-👉 [Day 18 – Linear Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/linearsearch)
-
-👉 [Day 18 – Binary Search](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/binarysearch)
-
-## 📅 Day 19 – Algorithm's Runtime Analysis & Big-O Notation
+## 📅 Day 5 – Algorithm's Runtime Analysis & Big-O Notation
 **(Date: 07-Jan-2026)**
+**(Focus: Analyzing Algorithm Efficiency)**
 
-- Runtime Analysis: Learned how the algorithm's execution time grows as the input size grow
-- Big-O Notation: Understood Big-O notation that represents the upper bound of an algorithm’s time or space growth with respect to input size
-- Cases: Worst, Average, and Best cases describe the maximum, expected, and minimum performance of an algorithm for different inputs
-- Optimizing Java code involves choosing efficient algorithms and data structures to reduce time and space complexity
-- Time Complexity Analysis: measures the number of operations an algorithm performs relative to the input size
-- Space Complexity Analysis: determines the amount of extra memory an algorithm requires during execution
+- Studied Time Complexity to understand how algorithm execution time grows with input size.
+- Learned Space Complexity to analyze memory usage of algorithms during execution.
+- Cases: Worst, Average, and Best cases describe the maximum, expected, and minimum performance of an algorithm for different inputs.
+- Explored common Big-O notations such as O(1), O(n), O(n²), and O(log n).
+- Compared different algorithms based on efficiency, scalability, and resource usage.
+- Focused on writing optimized and efficient code by choosing appropriate algorithms and data structures.
+  
+🔗 *Code Link:*  
+👉 [Day 5 – Runtime Analysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
+
+## 📅 Day 6 – DSA Scenario-Based Practice
+**(Date: 10-Jan-2026)**
+**(Focus: Real-World Application of Data Structures)**
+
+- Worked on real-world DSA scenarios using Linked Lists, Stacks, and HashMaps.
+- Implemented BookShelf with HashMap + LinkedList for efficient library organization.
+- Designed BrowserBuddy using Doubly Linked List and Stack for tab history management.
+- Simulated AmbulanceRoute using Circular Linked List for emergency navigation.
+  
+🔗 *Code Link:*  
+👉 [Day 6 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+
+## 📅 Day 7 – DSA Scenario-Based Practice
+**(Date: 11-Jan-2026)**
+**(Focus: Real-World Queue, Linked List & Stack Applications)**
+
+- Worked on real-world DSA scenarios using Queues, HashMaps, Doubly Linked Lists, and Stacks.
+- Implemented CallCenter using Queue, Priority Queue, and HashMap to manage customer calls and VIP handling.
+- Designed TrainCompanion with a Doubly Linked List to navigate, insert, and remove train compartments dynamically.
+- Built TextEditor functionality using Stacks to support undo and redo operations efficiently.
+- TrafficManager simulates a smart city roundabout using a Circular Linked List for vehicle flow and a Queue to manage waiting vehicles.
+  
+🔗 *Code Link:*  
+👉 [Day 7 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+
+## 📅 Day 8 – DSA Scenario-Based Practice
+**(Date: 13-Jan-2026)**
+**(Focus: Applying Queues, Linked Lists, Stacks & HashMaps)**
+
+- Worked on real-world DSA scenarios using Queue, HashMap, Stack, and Singly Linked List.
+- Implemented SmartCheckout using Queue and HashMap for customer billing, price lookup, and stock updates.
+- Designed ParcelTracker with a Singly Linked List to track parcel movement through delivery stages.
+- Built ExamProctor using Stack and HashMap to record question navigation and evaluate answers using functions.
+  
+🔗 *Code Link:*  
+👉 [Day 8 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+
+## 📅 Day 9 – DSA Scenario-Based Practice
+**(Date: 15-Jan-2026)**
+**(Focus: Real-World Application of Sorting Algorithms)**
+
+- Worked on DSA-based scenarios using sorting algorithms such as Bubble Sort, Insertion Sort, Merge Sort, and Quick Sort.
+- Applied Bubble Sort for small datasets in HospitalQueue to sort patients by criticality efficiently and in-place.
+- Used Insertion Sort in SmartShelf for real-time, nearly sorted data like dynamically added book titles.
+- Implemented Merge Sort in ZipZipMart and ExamCell to handle large-scale, stable sorting and merging of records.
+- Applied Quick Sort in EventManager for fast average-case performance on large, unsorted ticket price data.
+- Focused on choosing the right sorting technique based on data size, order, and performance needs, following DSA best practices.
+  
+🔗 *Code Link:*  
+👉 [Day 9 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ScenarioBasedQuestions/src/com)
+
+# Week 4: Collection Interface
+
+## 📅 Day 1 – Java Generics
+**(Date: 15-Jan-2026)**
+**(Focus: Understanding Generics for Type-Safe Collections)**
+
+- Understood how generics improve code reusability, readability, and compile-time checking.
+- Learned how generic classes, methods, and interfaces work with collections like List, Set, and Map.
+- Focused on applying generics effectively to write clean, robust, and maintainable collection-based code.
+- Explored bounded type parameters, wildcards (? extends, ? super), and their use cases.
+- Studied Java Generics in detail to understand how they provide type safety and reduce runtime errors in collections.
 
   🔗 *Code Link:*  
-👉 [Day 19 – Runtime Analysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
+👉 [Day 1 – Java Generics](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/javagenerics)
+
+## 📅 Day 2 – Java Collections
+**(Date: 16-Jan-2026)**
+**(Focus: Writing Clean & Professional Java Code)**
+
+- Studied the Java Collections Framework covering List, Set, Queue, and Map interfaces.
+- Explored List implementations such as ArrayList and LinkedList for ordered and index-based data storage.
+- Learned Set implementations like HashSet and TreeSet to handle unique elements and sorted collections.
+- Studied Map implementations such as HashMap and TreeMap for efficient key–value data storage and retrieval.
+- Focused on choosing the right collection type based on performance, ordering, and use-case requirements.
+
+🔗 *Code Link:*  
+👉 [Day 2 – Java Collections](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/gcr-codebase/JavaCollectionConcepts/src/com/collections)
+
+
+alysis](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/javaDSAConcepts/src/com/runtimeanalysis)
