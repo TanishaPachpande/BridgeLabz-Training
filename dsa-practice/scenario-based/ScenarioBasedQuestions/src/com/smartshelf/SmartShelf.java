@@ -25,7 +25,7 @@ public class SmartShelf {
     }
 
     public void displayShelf() {
-        System.out.println("\n📖 Sorted Reading List:");
+        System.out.println("\n Sorted Reading List:");
         for (Book b : books) {
             b.display();
         }
