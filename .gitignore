@@ -6,7 +6,11 @@
 
 # Java build output
 bin/
+<<<<<<< HEAD
 target/
+=======
+target/s
+>>>>>>> 2b52e93cc2ae0f024ba006eda57638c2ebc8470d
 
 # Logs
 *.log
