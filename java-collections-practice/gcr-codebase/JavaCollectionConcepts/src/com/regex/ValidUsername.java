@@ -14,9 +14,9 @@ public class ValidUsername {
 		
 		String regex="^[a-zA-Z][a-zA-Z0-9_]{4,14}";
 		
-		Pattern pattern = Pattern.compile(regex);
-		Matcher matcher = pattern.matcher(input);
+//		Pattern pattern = Pattern.compile(regex);
+//		Matcher matcher = pattern.matcher(input);
 		
-		System.out.println(matcher.matches());
+		System.out.println(input.matches(regex));
 	}
 }
