@@ -8,7 +8,7 @@ public class ValidHexColor {
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
 		
-		String regex = "^#[A-Fa-f0-9]{6}";
+		String regex = "#[A-Fa-f0-9]{6}";
 		
 		System.out.print("Enter Input: ");
 		String input=sc.nextLine();
