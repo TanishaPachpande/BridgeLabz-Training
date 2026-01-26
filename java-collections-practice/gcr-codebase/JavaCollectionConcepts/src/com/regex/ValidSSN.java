@@ -11,7 +11,7 @@ public class ValidSSN {  // Social Security Network
 		System.out.print("Enter Input: ");
 		String input = sc.nextLine();
 		
-		String regex = "\\b(\\d+-){2}\\d+\\b";
+		String regex = "\\b(\\d+\\-){2}\\d+\\b";
 		
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(input);
