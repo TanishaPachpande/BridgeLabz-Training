@@ -1,4 +1,4 @@
-package com.junitPractice;
+package com.junit.junit_practice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -11,6 +11,8 @@ import java.nio.file.Path;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.junit.junit_practice.FileProcessor;
 
 class FileProcessorTest {
 
