@@ -1,4 +1,4 @@
-package com.junit;
+package com.junitPractice;
 
 import java.io.IOException;
 import java.nio.file.Files;

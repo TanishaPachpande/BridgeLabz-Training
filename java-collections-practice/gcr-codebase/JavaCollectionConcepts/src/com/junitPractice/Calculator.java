@@ -1,4 +1,4 @@
-package com.junit;
+package com.junitPractice;
 
 public class Calculator {
 	public int add(int a, int b) {

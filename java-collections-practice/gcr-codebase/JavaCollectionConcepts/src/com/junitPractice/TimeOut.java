@@ -1,4 +1,4 @@
-package com.junit;
+package com.junitPractice;
 
 public class TimeOut {
 	public String longRunningTask() throws InterruptedException {
