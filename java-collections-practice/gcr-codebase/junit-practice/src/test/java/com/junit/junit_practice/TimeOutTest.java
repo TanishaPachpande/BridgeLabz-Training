@@ -1,7 +1,9 @@
-package com.junitPractice;
+package com.junit.junit_practice;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
+
+import com.junit.junit_practice.TimeOut;
 
 class TimeOutTest {
 
