@@ -1,4 +1,4 @@
-package com.junitPractice;
+package com.junit.junit_practice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+
+import com.junit.junit_practice.ListManager;
 
 class ListManagerTest {
 
