@@ -1,7 +1,7 @@
 # Week 5: Java IOStreams
 
 ## 📅 Day 1 – Java File Handling: CSV Data Handling  
-**(Date: 24-Jan-2025)**
+**(Date: 23-Jan-2025)**
 **(Focus: CSV Handling from Basics to Advanced Scenarios)**
 
 - Practiced reading, writing, and counting records in CSV files using structured data formats.
