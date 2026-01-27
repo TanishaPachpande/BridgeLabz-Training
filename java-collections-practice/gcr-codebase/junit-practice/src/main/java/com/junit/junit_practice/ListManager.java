@@ -1,4 +1,4 @@
-package com.junitPractice;
+package com.junit.junit_practice;
 
 import java.util.List;
 
