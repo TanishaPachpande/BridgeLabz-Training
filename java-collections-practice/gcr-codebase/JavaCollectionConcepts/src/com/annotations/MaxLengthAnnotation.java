@@ -12,12 +12,12 @@ import java.lang.reflect.Field;
     int value();
 }
 
-class User {
+class UserName {
 
     @MaxLength(10)
     private String username;
 
-    public User(String username) {
+    public UserName(String username) {
         validate(username);
         this.username = username;
     }
@@ -51,10 +51,10 @@ public class MaxLengthAnnotation {
 
     public static void main(String[] args) {
 
-        User user1 = new User("Tanisha");   // Valid
+    	UserName user1 = new UserName("Tanisha");   // Valid
         System.out.println(user1.getUsername());
 
-        User user2 = new User("VeryLongUsername"); // Exception
+        UserName user2 = new UserName("VeryLongUsername"); // Exception
     }
 }
 
