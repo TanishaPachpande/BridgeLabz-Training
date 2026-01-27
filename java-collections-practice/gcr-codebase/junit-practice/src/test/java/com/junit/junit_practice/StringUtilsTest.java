@@ -1,9 +1,11 @@
-package com.junitPractice;
+package com.junit.junit_practice;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.junit.junit_practice.StringUtils;
 
 class StringUtilsTest {
 	StringUtils s;
