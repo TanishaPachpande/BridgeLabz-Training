@@ -1,0 +1,14 @@
+DealCode: FLAT50
+ValidTill: 15-06-2025
+Discount: 50%
+MinimumPurchase: 999
+
+DealCode: FLAT30
+ValidTill: 10-01-2024
+Discount: 30%
+MinimumPurchase: 499
+
+DealCode: SUPER70
+ValidTill: 01-08-2025
+Discount: 70%
+MinimumPurchase: 1999
