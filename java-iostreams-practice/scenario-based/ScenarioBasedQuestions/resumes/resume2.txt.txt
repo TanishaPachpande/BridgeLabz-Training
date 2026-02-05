@@ -1,0 +1,4 @@
+Name: Tanisha Gupta
+Email: tanu@gmail.com
+Phone: 9875443210
+Skills: Java, Spring, Python, C
