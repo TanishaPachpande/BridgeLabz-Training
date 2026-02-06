@@ -108,4 +108,4 @@
 - Created tools like ExamResultUploader and DealTracker to validate CSV/text data, calculate rankings, and manage discounts efficiently.
   
 🔗 *Code Link:*  
-👉 [Day 8 – DSA Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/ScenarioBasedQuestions/src/com)
+👉 [Day 8 – Java Collections Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-collections-practice/java-collections-practice/scenario-based/ScenarioBasedQuestions/src/com)
