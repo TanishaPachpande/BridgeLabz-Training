@@ -27,3 +27,17 @@
 
 🔗 *Code Links:*  
 👉 [Day 2 – JSON Data Handling](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/gcr-codebase/json-practice/src/main/java/com/datahandling/json) 
+
+## 📅 Day 3 – Java I/O & Metadata: Scenario-Based Practice  
+**(Date: 27-Jan-2025)**
+**(Focus: Annotations, Reflection, CSV & JSON Data Handling)**
+
+- Worked on real-world Java scenarios integrating Annotations, Reflection, CSV parsing, and JSON processing.
+- Implemented HealthCheckPro to scan API methods using custom annotations and reflection for validation and documentation generation.
+- Built MarkMate to read student marks from CSV files, process results, and generate JSON-based report cards.
+- Developed EventTracker to detect annotated methods and produce structured JSON audit logs using reflection.
+- Focused on writing robust, metadata-driven, and data-processing applications with proper exception handling.
+
+🔗 *Code Link:*  
+👉 [Day 3 – IO Scenario-Based Practice](https://github.com/TanishaPachpande/BridgeLabz-Training/tree/java-iostreams-practice/java-iostreams-practice/scenario-based/ScenarioBasedQuestions/src/com)
+
