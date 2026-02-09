@@ -1,0 +1,130 @@
+/* 
+Exercise 1: Simple CRUD Application
+Create a console-based Employee Management System with:
+- Add employee
+- View all employees
+- Update employee salary
+- Delete employee
+- Search employee by name
+
+*/
+
+
+CREATE DATABASE mysql_practice;
+
+USE mysql_practice;
+
+CREATE TABLE employee(
+	empId INT PRIMARY KEY,
+    name VARCHAR(50),
+    salary INT
+);
+
+
+1- Add Employee
+
+	INSERT INTO employee(empId, name, salary)
+	 VALUES
+	 (101, 'Aditya Rathode', 90000),
+	 (102, 'Tanisha Pandey', 72000),
+	 (103, 'Harsh Pachpande', 85000),
+	 (104, 'Vibha Singh', 45000),
+	 (105, 'Aryan Mishra', 28000);
+	 
+output:
+	 5 row(s) affected
+     Records: 5  Duplicates: 0  Warnings: 0	0.016 sec
+ 
+ 
+ 
+ 2- View All Employees
+ 
+ 	SELECT * FROM employee;
+ 	
+Output: 
+	
+mysql> SELECT * FROM employee;
++-------+------------------+--------+
+| empId | name             | salary |
++-------+------------------+--------+
+|   101 | Aditya Rathode   |  90000 |
+|   102 | Tanisha Pandey   |  72000 |
+|   103 | Harsh Pachpande  |  85000 |
+|   104 | Vibha Singh      |  45000 |
+|   105 | Aryan Mishra     |  28000 |
++-------+------------------+--------+
+5 rows in set (0.00 sec)
+
+
+3- Update employee salary
+
+	UPDATE employee SET salary=75000
+	WHERE empId=104;
+	
+	output: 
+	
++-------+------------------+--------+
+| empId | name             | salary |
++-------+------------------+--------+
+|   101 | Aditya Rathode   |  90000 |
+|   102 | Tanisha Pandey   |  72000 |
+|   103 | Harsh Pachpande  |  85000 |
+|   104 | Vibha Singh      |  75000 |
+|   105 | Aryan Mishra     |  28000 |
++-------+------------------+--------+
+5 rows in set (0.00 sec)
+
+
+4- Delete employee
+
+	DELETE FROM employee WHERE empId=105;
+	
+output: 
+
++-------+------------------+--------+
+| empId | name             | salary |
++-------+------------------+--------+
+|   101 | Aditya Rathode   |  76000 |
+|   102 | Tanisha Pandey   |  89000 |
+|   103 | Harsh Pachpande  |  72000 |
+|   104 | Vibha Singh      |  75000 |
++-------+------------------+--------+
+4 rows in set (0.00 sec)
+ 	
+ 	
+ 	
+ 5- Search employee by name
+ 
+ 	SELECT * FROM employee
+    ->  WHERE name LIKE 'V%';
++-------+------------------+--------+
+| empId | name             | salary |
++-------+------------------+--------+
+|   104 | Vibha Singh      |  75000 |
++-------+------------------+--------+
+1 row in set (0.00 sec)
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
