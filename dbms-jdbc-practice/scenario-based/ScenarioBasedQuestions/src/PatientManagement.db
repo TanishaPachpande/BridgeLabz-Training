@@ -1,105 +1,174 @@
 1. Patient Management
 
------------------------------------------------------------------------
 UC-1.1: Register New Patient
 Actor: Receptionist
-Flow: Enter patient details (name, DOB, contact, address, blood group). 
-System validates uniqueness by phone/email, generates patient ID, inserts record into patients table with auto-increment primary key.
-------------------------------------------------------------------------
+Flow: Enter patient details (name, DOB, contact, address, blood group). System validates uniqueness by phone/email, generates patient ID, inserts record into patients 
+table with auto-increment primary key.
 
-mysql> use jdbc_db;
+
+	Code->
+		mysql> use mysql_jdbc_practice
 		Database changed
+		mysql> CREATE TABLE patients (
+		    ->     patient_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     name VARCHAR(50),
+		    ->     dob DATE,
+		    ->     phone VARCHAR(15) UNIQUE,
+		    ->     email VARCHAR(50) UNIQUE,
+		    ->     address VARCHAR(100),
+		    ->     blood_group VARCHAR(5)
+		    -> );
+		Query OK, 0 rows affected (0.06 sec)
 		
-mysql> create table patient
-    -> (id int auto_increment primary key,
-    -> name varchar(50),
-    -> dob date,
-    -> phone varchar(10) unique,
-    -> email varchar(40) unique,
-    -> address varchar(100),
-    -> blood_group varchar(20));
-Query OK, 0 rows affected (0.12 sec)
+		mysql> INSERT INTO patients (name, dob, phone, email, address, blood_group)
+		    -> VALUES ('Rahul Sharma', '2000-05-15', '9876543210', 'rahul@gmail.com', 'Bhopal', 'O+');
+		Query OK, 1 row affected (0.01 sec)
 
-mysql> insert into patient(name, dob, phone, email, address, blood_group) values('tanisha pachpande', '2004-05-05', '964785', 'tanisha@gmail.com', 'a-56 bhopal', 'B+');
-Query OK, 1 row affected (0.01 sec)
+		mysql> SELECT * FROM patients;
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		| patient_id | name         | dob        | phone      | email           | address | blood_group |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		|          1 | Rahul Sharma | 2000-05-15 | 9876543210 | rahul@gmail.com | Bhopal  | O+          |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		1 row in set (0.00 sec)		
 
-mysql> select * from patient;
-+----+-------------------+------------+--------+-------------------+-------------+-------------+
-| id | name              | dob        | phone  | email             | address     | blood_group |
-+----+-------------------+------------+--------+-------------------+-------------+-------------+
-|  1 | tanisha pachpande | 2004-05-05 | 964785 | tanisha@gmail.com | a-56 bhopal | B+          |
-+----+-------------------+------------+--------+-------------------+-------------+-------------+
-1 row in set (0.00 sec)
-
-
-
-
-------------------------------------------------------------------------
 UC-1.2: Update Patient Information
 Actor: Receptionist
 Flow: Search patient by ID/phone, display current details, update fields, execute SQL UPDATE with WHERE clause on patient ID.
+	
+	
+	Code->
+		
+		mysql> UPDATE patients
+		    -> SET address = 'Indore',
+		    ->     blood_group = 'A+'
+		    -> WHERE patient_id = 1;
+		Query OK, 1 row affected (0.01 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql> SELECT * FROM patients;
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		| patient_id | name         | dob        | phone      | email           | address | blood_group |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		|          1 | Rahul Sharma | 2000-05-15 | 9876543210 | rahul@gmail.com | Indore  | A+          |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		1 row in set (0.00 sec)
 
-------------------------------------------------------------------------
 
-mysql> update patient
-    -> set phone='45698723',
-    -> address = 'swadesh bhopal'
-    -> where id=1;
-Query OK, 1 row affected (0.02 sec)
-Rows matched: 1  Changed: 1  Warnings: 0
-
-mysql> select * from patient;
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-| id | name              | dob        | phone    | email             | address        | blood_group |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-|  1 | tanisha pachpande | 2004-05-05 | 45698723 | tanisha@gmail.com | swadesh bhopal | B+          |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-1 row in set (0.00 sec)
-
-
-
-------------------------------------------------------------------------
 UC-1.3: Search Patient Records
 Actor: Receptionist/Doctor
-Flow: Query patients table using LIKE operator for name search or exact match for ID/phone. 
-Display results using ResultSet iteration.
-------------------------------------------------------------------------
+Flow: Query patients table using LIKE operator for name search or exact match for ID/phone. Display results using ResultSet iteration.
 
-mysql> select * from patient where name like '%tanisha%';
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-| id | name              | dob        | phone    | email             | address        | blood_group |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-|  1 | tanisha pachpande | 2004-05-05 | 45698723 | tanisha@gmail.com | swadesh bhopal | B+          |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-1 row in set (0.08 sec)
+	code-> 
+	
+		1- Search by name (LIKE)
+		
+		SELECT * 
+		FROM patients
+		WHERE name LIKE '%Rahul%';
+		
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		| patient_id | name         | dob        | phone      | email           | address | blood_group |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		|          1 | Rahul Sharma | 2000-05-15 | 9876543210 | rahul@gmail.com | Indore  | A+          |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		1 row in set (0.00 sec)
+			
+		2- Search by patient ID
+		
+		SELECT * 
+		FROM patients
+		WHERE patient_id = 1;
+		
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		| patient_id | name         | dob        | phone      | email           | address | blood_group |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		|          1 | Rahul Sharma | 2000-05-15 | 9876543210 | rahul@gmail.com | Indore  | A+          |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		1 row in set (0.00 sec)
 
-mysql> select * from patient where phone='45698723';
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-| id | name              | dob        | phone    | email             | address        | blood_group |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-|  1 | tanisha pachpande | 2004-05-05 | 45698723 | tanisha@gmail.com | swadesh bhopal | B+          |
-+----+-------------------+------------+----------+-------------------+----------------+-------------+
-1 row in set (0.02 sec)
-
-
-
-------------------------------------------------------------------------
+		3- Search by phone
+	
+		SELECT * 
+		FROM patients
+		WHERE phone = '9876543210';
+		
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		| patient_id | name         | dob        | phone      | email           | address | blood_group |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		|          1 | Rahul Sharma | 2000-05-15 | 9876543210 | rahul@gmail.com | Indore  | A+          |
+		+------------+--------------+------------+------------+-----------------+---------+-------------+
+		1 row in set (0.00 sec)
+		
+		
 UC-1.4: View Patient Visit History
 Actor: Doctor/Receptionist
-Flow: Execute JOIN query between appointments and visits tables filtered by patient ID. 
-Display chronological list with doctor names and diagnoses.
-------------------------------------------------------------------------
+Flow: Execute JOIN query between appointments and visits tables filtered by patient ID. Display chronological list with doctor names and diagnoses.
 
-mysql> create table doctor
-    -> (d_id int primary key,
-    -> d_name varchar(40));
-Query OK, 0 rows affected (0.16 sec)
 
-mysql> create table visit
-    -> (v_id int primary key,
-    -> d_id int,
-    -> p_id int,
-    -> visit_date date,
-    -> reason varchar(20));
-Query OK, 0 rows affected (0.04 sec)
+
+	code->
+
+		mysql> CREATE TABLE doctors (
+		    ->     doctor_id INT PRIMARY KEY,
+		    ->     doctor_name VARCHAR(50)
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql> CREATE TABLE visits (
+		    ->     visit_id INT PRIMARY KEY,
+		    ->     patient_id INT,
+		    ->     doctor_id INT,
+		    ->     visit_date DATE,
+		    ->     diagnosis VARCHAR(100)
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		
+		mysql> INSERT INTO doctors VALUES (1, 'Dr. Mehta');
+		Query OK, 1 row affected (0.01 sec)
+		
+		mysql>
+		mysql> INSERT INTO visits VALUES
+		    -> (101, 1, 1, '2026-01-10', 'Fever'),
+		    -> (102, 1, 1, '2026-02-05', 'Cold');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> SELECT
+		    ->     v.visit_date,
+		    ->     d.doctor_name,
+		    ->     v.diagnosis
+		    -> FROM visits v
+		    -> JOIN doctors d ON v.doctor_id = d.doctor_id
+		    -> WHERE v.patient_id = 1
+		    -> ORDER BY v.visit_date;
+		+------------+-------------+-----------+
+		| visit_date | doctor_name | diagnosis |
+		+------------+-------------+-----------+
+		| 2026-01-10 | Dr. Mehta   | Fever     |
+		| 2026-02-05 | Dr. Mehta   | Cold      |
+		+------------+-------------+-----------+
+		2 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
