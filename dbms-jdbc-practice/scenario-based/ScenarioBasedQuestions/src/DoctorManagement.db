@@ -1,0 +1,121 @@
+2. Doctor Management
+UC-2.1: Add Doctor Profile
+
+
+Actor: Administrator
+Flow: Input doctor details (name, specialization, contact, consultation fee). Insert into doctors table with foreign key reference to specialties table.
+
+	code->
+	
+		mysql> CREATE TABLE specialties (
+	    ->     specialty_id INT PRIMARY KEY,
+	    ->     specialty_name VARCHAR(50)
+	    -> );
+		Query OK, 0 rows affected (0.04 sec)
+	
+	
+		mysql> INSERT INTO specialties VALUES
+	    -> (1, 'Cardiology'),
+	    -> (2, 'Orthopedics'),
+	    -> (3, 'General Medicine');
+		Query OK, 3 rows affected (0.01 sec)
+		Records: 3  Duplicates: 0  Warnings: 0
+				
+		mysql> CREATE TABLE doctor_profiles (
+		    ->     doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     doctor_name VARCHAR(50),
+		    ->     specialization VARCHAR(50),
+		    ->     contact VARCHAR(15),
+		    ->     consultation_fee INT,
+		    ->     specialty_id INT,
+		    ->     is_active BOOLEAN DEFAULT TRUE,
+		    ->     FOREIGN KEY (specialty_id) REFERENCES specialties(specialty_id)
+		    -> );
+		Query OK, 0 rows affected (0.07 sec)
+		
+		mysql> INSERT INTO doctor_profiles
+		    -> (doctor_name, specialization, contact, consultation_fee, specialty_id)
+		    -> VALUES ('Dr. Anil Kumar', 'Heart Specialist', '9876541111', 500, 1);
+		Query OK, 1 row affected (0.01 sec)
+		
+		
+UC-2.2: Assign/Update Doctor Specialty
+Actor: Administrator
+Flow: Display available specialties from lookup table, update doctor's specialty_id using UPDATE statement with transaction to maintain referential integrity.
+
+	code->
+		mysql> SELECT * FROM specialties;
+		+--------------+------------------+
+		| specialty_id | specialty_name   |
+		+--------------+------------------+
+		|            1 | Cardiology       |
+		|            2 | Orthopedics      |
+		|            3 | General Medicine |
+		+--------------+------------------+
+		3 rows in set (0.00 sec)
+		
+		mysql> START TRANSACTION;
+		Query OK, 0 rows affected (0.00 sec)
+		
+		mysql>
+		mysql> UPDATE doctor_profiles
+		    -> SET specialty_id = 2
+		    -> WHERE doctor_id = 1;
+		Query OK, 1 row affected (0.00 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql>
+		mysql> COMMIT;
+		Query OK, 0 rows affected (0.00 sec)
+
+
+UC-2.3: View Doctors by Specialty
+Actor: Receptionist
+Flow: Execute JOIN query between doctors and specialties tables, filter by specialty name. Display available doctors with their schedules.
+
+	code-> 
+	
+		mysql> SELECT
+		    ->     d.doctor_name,
+		    ->     d.specialization,
+		    ->     s.specialty_name,
+		    ->     d.consultation_fee
+		    -> FROM doctor_profiles d
+		    -> JOIN specialties s
+		    -> ON d.specialty_id = s.specialty_id
+		    -> WHERE s.specialty_name = 'Cardiology'
+		    -> AND d.is_active = TRUE;
+		Empty set (0.00 sec)
+
+	
+	
+	
+UC-2.4: Deactivate Doctor Profile
+Actor: Administrator
+Flow: Soft delete using UPDATE to set is_active=false in doctors table. Check for future appointments using nested SELECT before deactivation.
+
+	code->
+		mysql> CREATE TABLE appointments (
+		    ->     appointment_id INT PRIMARY KEY,
+		    ->     doctor_id INT,
+		    ->     appointment_date DATE
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> SELECT *
+		    -> FROM appointments
+		    -> WHERE doctor_id = 1
+		    -> AND appointment_date > CURDATE();
+		Empty set (0.00 sec)
+		
+		mysql> UPDATE doctor_profiles
+		    -> SET is_active = FALSE
+		    -> WHERE doctor_id = 1
+		    -> AND doctor_id NOT IN (
+		    ->     SELECT doctor_id
+		    ->     FROM appointments
+		    ->     WHERE appointment_date > CURDATE()
+		    -> );
+		Query OK, 1 row affected (0.01 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+			
