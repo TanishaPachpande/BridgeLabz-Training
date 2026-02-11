@@ -1,0 +1,159 @@
+5. Billing & Payments
+	
+	
+	
+			mysql> CREATE TABLE bp_patients (
+		    ->     patient_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_name VARCHAR(50)
+		    -> );
+		Query OK, 0 rows affected (0.05 sec)
+		
+		
+		mysql> INSERT INTO bp_patients (patient_name) VALUES
+		    -> ('Amit Verma'),
+		    -> ('Riya Sharma');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE bp_doctors (
+		    ->     doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     doctor_name VARCHAR(50),
+		    ->     consultation_fee INT,
+		    ->     specialty VARCHAR(50)
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO bp_doctors (doctor_name, consultation_fee, specialty) VALUES
+		    -> ('Dr. Anil Kumar', 500, 'Cardiology'),
+		    -> ('Dr. Sunita Jain', 600, 'Orthopedics');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE bp_visits (
+		    ->     visit_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_id INT,
+		    ->     doctor_id INT,
+		    ->     visit_date DATE
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO bp_visits (patient_id, doctor_id, visit_date) VALUES
+		    -> (1, 1, '2026-03-20'),
+		    -> (2, 2, '2026-03-21');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE bp_bill_items (
+		    ->     item_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     visit_id INT,
+		    ->     item_name VARCHAR(50),
+		    ->     amount INT
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO bp_bill_items (visit_id, item_name, amount) VALUES
+		    -> (1, 'Consultation Fee', 500),
+		    -> (1, 'ECG Test', 300),
+		    -> (2, 'Consultation Fee', 600),
+		    -> (2, 'X-Ray', 400);
+		Query OK, 4 rows affected (0.01 sec)
+		Records: 4  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE bp_bills (
+		    ->     bill_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     visit_id INT,
+		    ->     total_amount INT,
+		    ->     payment_status VARCHAR(20),
+		    ->     bill_date DATE
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql> CREATE TABLE bp_payment_transactions (
+		    ->     transaction_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     bill_id INT,
+		    ->     payment_date DATE,
+		    ->     payment_mode VARCHAR(20),
+		    ->     amount INT
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql>
+
+UC-5.1: Generate Bill for Visit
+Actor: Receptionist
+Flow: Calculate total from doctor's consultation_fee plus any additional charges. Insert into bills table with foreign key to visit_id. Use SUM aggregate function for itemized billing.
+	
+	code->
+
+		mysql> INSERT INTO bp_bills (visit_id, total_amount, payment_status, bill_date)
+		    -> SELECT
+		    ->     visit_id,
+		    ->     SUM(amount),
+		    ->     'UNPAID',
+		    ->     CURDATE()
+		    -> FROM bp_bill_items
+		    -> WHERE visit_id = 1
+		    -> GROUP BY visit_id;
+		Query OK, 1 row affected (0.01 sec)
+		Records: 1  Duplicates: 0  Warnings: 0
+		
+UC-5.2: Record Payment
+Actor: Receptionist
+Flow: Update bills table setting payment_status='PAID', payment_date, payment_mode. Use transaction to insert record in payment_transactions table simultaneously.
+
+	code->
+		
+		mysql> START TRANSACTION;
+		Query OK, 0 rows affected (0.00 sec)
+		
+		mysql>
+		mysql> UPDATE bp_bills
+		    -> SET payment_status = 'PAID'
+		    -> WHERE bill_id = 1;
+		Query OK, 1 row affected (0.00 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql>
+		mysql> INSERT INTO bp_payment_transactions
+		    -> (bill_id, payment_date, payment_mode, amount)
+		    -> VALUES (1, CURDATE(), 'CASH', 800);
+		Query OK, 1 row affected (0.00 sec)
+		
+		mysql>
+		mysql> COMMIT;
+		Query OK, 0 rows affected (0.01 sec)
+
+UC-5.3: View Outstanding Bills
+Actor: Receptionist/Administrator
+Flow: SELECT from bills table WHERE payment_status='UNPAID' with JOIN to patients. Use aggregate functions (SUM, COUNT) grouped by patient for summary.
+
+	code-> 
+	
+		mysql> SELECT
+		    ->     p.patient_name,
+		    ->     COUNT(b.bill_id) AS total_bills,
+		    ->     SUM(b.total_amount) AS total_due
+		    -> FROM bp_bills b
+		    -> JOIN bp_visits v ON b.visit_id = v.visit_id
+		    -> JOIN bp_patients p ON v.patient_id = p.patient_id
+		    -> WHERE b.payment_status = 'UNPAID'
+		    -> GROUP BY p.patient_name;
+		Empty set (0.00 sec)
+		 
+UC-5.4: Generate Revenue Report
+Actor: Administrator
+Flow: Execute aggregate query with SUM on bills table grouped by date/doctor/specialty. Use BETWEEN operator for date range filtering and HAVING clause for thresholds.
+
+	code->
+		mysql> SELECT
+		    ->     d.doctor_name,
+		    ->     d.specialty,
+		    ->     SUM(b.total_amount) AS total_revenue
+		    -> FROM bp_bills b
+		    -> JOIN bp_visits v ON b.visit_id = v.visit_id
+		    -> JOIN bp_doctors d ON v.doctor_id = d.doctor_id
+		    -> WHERE b.bill_date BETWEEN '2026-03-01' AND '2026-03-31'
+		    -> AND b.payment_status = 'PAID'
+		    -> GROUP BY d.doctor_name, d.specialty
+		    -> HAVING SUM(b.total_amount) > 500;
+		Empty set (0.00 sec)
