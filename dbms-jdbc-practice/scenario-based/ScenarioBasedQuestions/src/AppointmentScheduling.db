@@ -1,0 +1,175 @@
+3. Appointment Scheduling
+
+
+			mysql> CREATE TABLE as_patients (
+		    ->     patient_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_name VARCHAR(50),
+		    ->     phone VARCHAR(15)
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO as_patients (patient_name, phone) VALUES
+		    -> ('Amit Verma', '9000000001'),
+		    -> ('Riya Sharma', '9000000002');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE as_doctors (
+		    ->     doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     doctor_name VARCHAR(50),
+		    ->     max_daily_slots INT
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO as_doctors (doctor_name, max_daily_slots) VALUES
+		    -> ('Dr. Anil Kumar', 5),
+		    -> ('Dr. Sunita Jain', 4);
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE as_appointments (
+		    ->     appointment_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_id INT,
+		    ->     doctor_id INT,
+		    ->     appointment_date DATE,
+		    ->     appointment_time TIME,
+		    ->     status VARCHAR(20)
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> CREATE TABLE as_appointment_audit (
+		    ->     audit_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     appointment_id INT,
+		    ->     action VARCHAR(20),
+		    ->     action_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+		    -> );
+		Query OK, 0 rows affected (0.02 sec)
+			
+
+
+
+UC-3.1: Book New Appointment
+Actor: Receptionist
+Flow: Select patient and doctor, check availability using SELECT with date/time constraints. Insert into appointments table with status='SCHEDULED'.
+ Use PreparedStatement to prevent SQL injection.
+
+	code->
+	
+		mysql> SELECT COUNT(*) AS slot_count
+		    -> FROM as_appointments
+		    -> WHERE doctor_id = 1
+		    -> AND appointment_date = '2026-03-01'
+		    -> AND appointment_time = '10:00:00'
+		    -> AND status = 'SCHEDULED';
+		+------------+
+		| slot_count |
+		+------------+
+		|          0 |
+		+------------+
+		1 row in set (0.01 sec)
+		
+		mysql> INSERT INTO as_appointments
+		    -> (patient_id, doctor_id, appointment_date, appointment_time, status)
+		    -> VALUES (1, 1, '2026-03-01', '10:00:00', 'SCHEDULED');
+		Query OK, 1 row affected (0.01 sec)
+	
+	
+UC-3.2: Check Doctor Availability
+Actor: Receptionist
+Flow: Query appointments table with WHERE clause for doctor_id and date. Use GROUP BY and COUNT to show slot-wise bookings against max capacity.
+
+	code->
+	
+		mysql> SELECT
+		    ->     appointment_time,
+		    ->     COUNT(*) AS booked_slots
+		    -> FROM as_appointments
+		    -> WHERE doctor_id = 1
+		    -> AND appointment_date = '2026-03-01'
+		    -> AND status = 'SCHEDULED'
+		    -> GROUP BY appointment_time;
+		+------------------+--------------+
+		| appointment_time | booked_slots |
+		+------------------+--------------+
+		| 10:00:00         |            1 |
+		+------------------+--------------+
+		1 row in set (0.00 sec)
+
+UC-3.3: Cancel Appointment
+Actor: Receptionist/Patient
+Flow: Update appointment status to 'CANCELLED' using UPDATE statement. Execute within transaction to log cancellation in appointment_audit table.
+
+	code->
+		mysql> START TRANSACTION;
+		Query OK, 0 rows affected (0.00 sec)
+		
+		mysql>
+		mysql> UPDATE as_appointments
+		    -> SET status = 'CANCELLED'
+		    -> WHERE appointment_id = 1;
+		Query OK, 1 row affected (0.00 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql>
+		mysql> INSERT INTO as_appointment_audit
+		    -> (appointment_id, action)
+		    -> VALUES (1, 'CANCELLED');
+		Query OK, 1 row affected (0.00 sec)
+		
+		mysql>
+		mysql> COMMIT;
+		Query OK, 0 rows affected (0.00 sec)	
+
+UC-3.4: Reschedule Appointment
+Actor: Receptionist
+Flow: Verify new slot availability, update appointment date/time and doctor_id if needed. Use transaction with ROLLBACK capability if conflicts detected.
+
+	code->
+
+		mysql> SELECT COUNT(*)
+		    -> FROM as_appointments
+		    -> WHERE doctor_id = 2
+		    -> AND appointment_date = '2026-03-02'
+		    -> AND appointment_time = '11:00:00'
+		    -> AND status = 'SCHEDULED';
+		+----------+
+		| COUNT(*) |
+		+----------+
+		|        0 |
+		+----------+
+		1 row in set (0.00 sec)
+		
+		
+		mysql> START TRANSACTION;
+		Query OK, 0 rows affected (0.00 sec)
+		
+		mysql>
+		mysql> UPDATE as_appointments
+		    -> SET doctor_id = 2,
+		    ->     appointment_date = '2026-03-02',
+		    ->     appointment_time = '11:00:00'
+		    -> WHERE appointment_id = 1;
+		Query OK, 1 row affected (0.00 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql>
+		mysql> COMMIT;
+		Query OK, 0 rows affected (0.01 sec)
+
+UC-3.5: View Daily Appointment Schedule
+Actor: Doctor/Receptionist
+Flow: Execute multi-table JOIN (appointments, patients, doctors) filtered by date. Order by appointment_time using ORDER BY clause.
+
+	code->
+		mysql> SELECT
+		    ->     a.appointment_time,
+		    ->     p.patient_name,
+		    ->     d.doctor_name,
+		    ->     a.status
+		    -> FROM as_appointments a
+		    -> JOIN as_patients p ON a.patient_id = p.patient_id
+		    -> JOIN as_doctors d ON a.doctor_id = d.doctor_id
+		    -> WHERE a.appointment_date = '2026-03-01'
+		    -> ORDER BY a.appointment_time;
+		Empty set (0.00 sec)
+			
