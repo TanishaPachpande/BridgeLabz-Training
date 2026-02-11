@@ -1,0 +1,118 @@
+4. Visit Management & Medical Records
+	
+	
+	
+		mysql> CREATE TABLE vm_patients (
+		    ->     patient_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_name VARCHAR(50)
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql> INSERT INTO vm_patients (patient_name) VALUES
+		    -> ('Amit Verma'),
+		    -> ('Riya Sharma');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE vm_doctors (
+		    ->     doctor_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     doctor_name VARCHAR(50)
+		    -> );
+		Query OK, 0 rows affected (0.03 sec)
+		
+		mysql> INSERT INTO vm_doctors (doctor_name) VALUES
+		    -> ('Dr. Anil Kumar'),
+		    -> ('Dr. Sunita Jain');
+		Query OK, 2 rows affected (0.01 sec)
+		Records: 2  Duplicates: 0  Warnings: 0
+		
+		mysql> CREATE TABLE vm_appointments (
+		    ->     appointment_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     patient_id INT,
+		    ->     doctor_id INT,
+		    ->     appointment_date DATE,
+		    ->     status VARCHAR(20)
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql> INSERT INTO vm_appointments
+		    -> (patient_id, doctor_id, appointment_date, status)
+		    -> VALUES
+		    -> (1, 1, '2026-03-10', 'SCHEDULED');
+		Query OK, 1 row affected (0.01 sec)
+		
+		mysql> CREATE TABLE vm_visits (
+		    ->     visit_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     appointment_id INT,
+		    ->     patient_id INT,
+		    ->     doctor_id INT,
+		    ->     visit_date DATE,
+		    ->     diagnosis VARCHAR(100),
+		    ->     notes VARCHAR(200)
+		    -> );
+		Query OK, 0 rows affected (0.04 sec)
+		
+		mysql> CREATE TABLE vm_prescriptions (
+		    ->     prescription_id INT AUTO_INCREMENT PRIMARY KEY,
+		    ->     visit_id INT,
+		    ->     medicine_name VARCHAR(50),
+		    ->     dosage VARCHAR(30),
+		    ->     duration VARCHAR(30)
+		    -> );
+		Query OK, 0 rows affected (0.02 sec)
+
+
+UC-4.1: Record Patient Visit
+Actor: Doctor
+Flow: After appointment completion, insert visit record into visits table with diagnosis, prescription, notes. Update appointment status to 'COMPLETED' in same transaction.
+
+	code->
+
+		mysql> UPDATE vm_appointments
+		    -> SET status = 'COMPLETED'
+		    -> WHERE appointment_id = 1;
+		Query OK, 1 row affected (0.00 sec)
+		Rows matched: 1  Changed: 1  Warnings: 0
+		
+		mysql>
+		mysql> COMMIT;
+		Query OK, 0 rows affected (0.00 sec)
+
+
+UC-4.2: View Patient Medical History
+Actor: Doctor
+Flow: Execute JOIN query across visits, prescriptions, and appointments tables. Filter by patient_id and order by visit_date DESC for chronological view.
+
+	code->
+
+
+		mysql> SELECT
+		    ->     v.visit_date,
+		    ->     d.doctor_name,
+		    ->     v.diagnosis,
+		    ->     p.medicine_name,
+		    ->     p.dosage,
+		    ->     p.duration
+		    -> FROM vm_visits v
+		    -> JOIN vm_prescriptions p ON v.visit_id = p.visit_id
+		    -> JOIN vm_appointments a ON v.appointment_id = a.appointment_id
+		    -> JOIN vm_doctors d ON v.doctor_id = d.doctor_id
+		    -> WHERE v.patient_id = 1
+		    -> ORDER BY v.visit_date DESC;
+		Empty set (0.00 sec)
+
+
+UC-4.3: Add Prescription Details
+Actor: Doctor
+Flow: Insert multiple records into prescriptions table (one-to-many with visits) containing medicine name, dosage, duration. Use batch INSERT for efficiency.
+
+	 code->
+	 
+		mysql> INSERT INTO vm_prescriptions
+		    -> (visit_id, medicine_name, dosage, duration)
+		    -> VALUES
+		    -> (1, 'Paracetamol', '500mg', '5 days'),
+		    -> (1, 'Vitamin C', '1 tablet', '7 days'),
+		    -> (1, 'Cough Syrup', '10ml', '5 days');
+		Query OK, 3 rows affected (0.01 sec)
+		Records: 3  Duplicates: 0  Warnings: 0
