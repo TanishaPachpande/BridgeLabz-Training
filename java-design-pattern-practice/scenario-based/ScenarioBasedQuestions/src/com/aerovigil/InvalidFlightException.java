@@ -1,0 +1,7 @@
+package com.aerovigil;
+
+public class InvalidFlightException extends Exception {
+	public InvalidFlightException(String msg) {
+		super(msg);
+	}
+}
